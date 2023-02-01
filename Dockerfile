@@ -20,7 +20,7 @@ RUN pip install -r /tmp/requirements.txt
 
 COPY . .
 
-RUN django-admin compilemessages
+RUN cd technicaltest django-admin compilemessages
 
 USER app
 
